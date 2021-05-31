@@ -8,7 +8,8 @@ class Vostok < Formula
   def install
     system "./init.sh"
     system "result/bs-ost", "run", "make.Build", "-infr", ".", "-m", "source"
-    system "mkdir", "-p", "#{prefix}/bin", "#{prefix}/share"
+    mkdir_p bin
+    mkdir_p share
     system "result/ost", "run", "make.InstallTo(\"#{prefix}\")", "-infr", ".", "-m", "source"
   end
 
