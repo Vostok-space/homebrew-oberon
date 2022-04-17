@@ -1,5 +1,5 @@
 class Odcread < Formula
-  desc "Converter of the Oberon/BlackBox .odc binary files"
+  desc "Converter of the Oberon/BlackBox .odc binary files(abandoned, odcey recommended)"
   homepage "https://github.com/ComdivByZero/odcread"
   url "https://github.com/ComdivByZero/odcread/archive/refs/tags/v0.2.tar.gz"
   sha256 "e459a78f614001899b6d64bde61ad8108d23697cec4838654804be2f9acd88a2"
