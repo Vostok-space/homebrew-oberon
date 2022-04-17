@@ -1,18 +1,18 @@
 class Odcey < Formula
-  desc "Converter from BlackBox Component Builder .odc format to plain text"
-  homepage "https://github.com/Vostok-space/odcey"
-  url "https://github.com/Vostok-space/odcey/archive/refs/tags/v0.d.3.tar.gz"
-  sha256 "d6a38662d8e187660b2243de9fcab23eed36d0fb2add7edc2746ec4d4efe8200"
-  license "Apache-2.0"
+  desc      "Converter from BlackBox Component Builder .odc format to plain text"
+  homepage  "https://github.com/Vostok-space/odcey"
+  url       "https://github.com/Vostok-space/odcey/archive/refs/tags/v0.1.0.tar.gz"
+  sha256    "2c8bb3723412531ef66362eaa4034c6f71dc66435b650089b0d9edf1d2a42a2d"
+  license   "Apache-2.0"
 
-  depends_on "vostok-space/oberon/vostok" => [:build]
+  depends_on "vostok-space/oberon/vostok" => :build
 
   def install
-    system "ost", "to-bin", "odcey.Cli", "odcey", "-m", ".", "-cc", "cc -s -O1 -flto"
-    cp "odcey", bin
+    mkdir_p bin
+    system "ost", "to-bin", "odcey.Cli", "#{bin}/odcey", "-m", ".", "-cc", "cc -s -O1 -flto"
   end
 
   test do
-    system bin + "/odcey", "help"
+    system "#{bin}/odcey", "help"
   end
 end
