@@ -2,9 +2,11 @@
 
 ## How do I install these formulae?
 
-`brew install vostok-space/oberon/<formula>`
+`brew tap vostok-space/oberon` #and then
 
-Or `brew tap vostok-space/oberon` and then `brew install <formula>`.
+`brew install vostok` #to install Oberon compiler
+
+`brew install odcey` #to install .odc to plain text converter
 
 ## Documentation
 
