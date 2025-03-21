@@ -1,8 +1,8 @@
 class Vostok < Formula
   desc "Oberon-07 translator"
   homepage "http://vostok.oberon.org"
-  url "https://github.com/Vostok-space/vostok/archive/refs/tags/lib-v0.0.9_ost-v0.0.10.tar.gz"
-  sha256 "10e146e3ac23cc5beeef62cc61038f6c874f5f3588f745eb59da875c1b41141f"
+  url "https://github.com/Vostok-space/vostok/archive/refs/tags/lib-v0.0.10_ost-v0.0.11.tar.gz"
+  sha256 "a5bca9b4484f6879e92c7637557eb2c5f1d9a20b722c0ae6cc21a451c56611f3"
   license "LGPL-3.0-only"
 
   def install
