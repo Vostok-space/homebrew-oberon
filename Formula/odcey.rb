@@ -1,8 +1,8 @@
 class Odcey < Formula
   desc      "Converter from BlackBox Component Builder .odc format to plain text"
   homepage  "https://github.com/Vostok-space/odcey"
-  url       "https://github.com/Vostok-space/odcey/archive/refs/tags/v0.3.2.tar.gz"
-  sha256    "25fc432e1c95631d5d119aac7dfc078fe82ccc5699b550affd28a1ed635a29e8"
+  url       "https://github.com/Vostok-space/odcey/archive/refs/tags/v0.4.tar.gz"
+  sha256    "288587fa9cb5867f18e2730967902e8c467fddd02f0d3c9dc9e4d7d891134c7a"
   license   "Apache-2.0"
 
   depends_on "vostok-space/oberon/vostok" => :build
